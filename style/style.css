@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+/* home style */
+.nav-container{
+    background-color: rgba(87, 87, 87, 0.822);
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-logo{
+    height: 60px;
+    width: 120px;
+}
+
+.nav-divider {
+    width: 100%;
+    border: none;
+    height: 3px;
+    background-color: white; /* or any color */
+    margin: 15px 0;
+}
+
+
+.nav-container ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+.nav-container ul li{
+   list-style: none;
+}
+
+.nav-container ul li a{
+    text-decoration: none;
+    color: rgb(48, 47, 47);
+    font-size: 25px;
+}
+
+.nav-container ul li a:hover{
+    color: white;
+}
