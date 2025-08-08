@@ -3,6 +3,7 @@
     padding: 0px;
     max-width: 1280px;
     margin: auto;
+    scroll-behavior: smooth;
 }
 
 /* home style */
@@ -46,3 +47,99 @@
 .nav-container ul li a:hover{
     color: white;
 }
+
+/* home */
+.home{
+    background-color: black;
+}
+
+.home-container{
+    display: flex;
+    padding: 30px 60px;
+}
+
+.home-img{
+    height: 500px;
+    width: 500px;
+    border-radius: 50px 0px;
+}
+
+.home-container p{
+    color: white;
+    font-size: 40px;
+}
+
+#home-hello{
+    color: red;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.home-hadiul-islam{
+    color: rgb(133, 132, 132);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* my story */
+.my-story{
+    background-color: black;
+}
+
+.my-story-container{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 60px;
+    gap: 50px;
+}
+
+.section-header{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.my-story-text-img{
+    display:flex;
+    gap: 70px;
+    
+}
+
+.my-story-img{
+    height: 500px;
+    width: 500px;
+    border-radius: 0px 50px;
+}
+
+.my-story-paragraph{
+    color: white;
+    font-size: 30px;
+}
+
+/* my study */
+.study{
+    background-color: black;
+}
+.study-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.study-card-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 40px;
+}
+
+.study-card-container div{
+    border: 2px solid rgb(133, 132, 132);
+    margin: 20px 30px;
+    padding: 20px;
+    color: white;
+}
+
+.study-card-container div:hover{
+    background-color: rgb(71, 71, 71);
+}
+
+/* my skill */
