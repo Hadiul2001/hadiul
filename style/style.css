@@ -8,7 +8,7 @@
 
 /* home style */
 .nav-container{
-    background-color: rgba(87, 87, 87, 0.822);
+    background-color: rgb(47, 46, 46);
     display: flex;
     flex-direction: column;
 }
@@ -21,7 +21,7 @@
 .nav-divider {
     width: 100%;
     border: none;
-    height: 3px;
+    height: 1px;
     background-color: white; /* or any color */
     margin: 15px 0;
 }
@@ -40,8 +40,8 @@
 
 .nav-container ul li a{
     text-decoration: none;
-    color: rgb(48, 47, 47);
-    font-size: 25px;
+    color: rgb(161, 157, 157);
+    font-size: 15px;
 }
 
 .nav-container ul li a:hover{
@@ -237,4 +237,102 @@
     background-color: rgb(71, 71, 71);
     margin:30px;
     padding:30px;
+}
+
+/* social-media */
+.social-media{
+    background-color: black;
+}
+
+.social-media-container{
+    display: flex;
+    flex-direction: column;
+    padding:40px;
+}
+
+.social-media-card{
+    display: flex;
+    gap:30px;
+    margin-top:40px;
+}
+
+.social-media-card div a img{
+    height: 200px;
+    width: 200px;
+}
+
+/* blog style */
+.blog{
+    background-color: black;
+}
+
+.blog-container{
+    display: flex;
+    flex-direction: column;
+    padding:40px;
+}
+
+.blog-card-container{
+    display: flex;
+    gap: 300px;
+}
+
+.blog-card-container button{
+    padding: 50px;
+    margin: 30px;
+    border-radius: 15px;
+    background-color: rgb(5, 5, 81);
+    border: none;
+}
+
+.blog-card-container button a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* contact */
+.contact{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(176, 176, 174);
+}
+
+.contact-section-header{
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+    
+}
+
+.contact h3{
+    color: rgb(78, 78, 72);
+    font-size: 20px;
+}
+
+.contact h5{
+    font-size: 20px;
+}
+
+.contact input{
+    text-align: center;
+    padding: 10px 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+#subject{
+    padding: 20px 300px;
+}
+
+#message{
+    padding: 40px 300px;
+}
+
+
+.email-style{
+    color: red;
+    font-weight: bolder;
 }
