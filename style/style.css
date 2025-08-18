@@ -6,6 +6,14 @@
     scroll-behavior: smooth;
 }
 
+.section-header:hover{
+    color: rgb(136, 136, 148);
+}
+
+body{
+     background-color: black;
+}
+
 /* home style */
 .nav-container{
     background-color: rgb(47, 46, 46);
@@ -64,6 +72,10 @@
     border-radius: 50px 0px;
 }
 
+.home-img:hover{
+    content: url(/Assets/home_hadicolor.jpg);
+}
+
 .home-container p{
     color: white;
     font-size: 40px;
@@ -79,6 +91,26 @@
     color: rgb(133, 132, 132);
     font-size: 50px;
     font-weight: bold;
+}
+
+.btn-cv a{
+    text-decoration: none;
+    font-size: 40px;
+    color: rgb(78, 78, 72);
+    font-weight: bold;
+}
+
+.btn-cv{
+    margin: 20px 20px 20px 0px;
+    padding: 20px;
+    background-color:navy;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn-cv:hover{
+    color: black;
+    background-color: white;
 }
 
 /* my story */
@@ -109,6 +141,10 @@
     height: 500px;
     width: 500px;
     border-radius: 0px 50px;
+}
+
+.my-story-img:hover{
+    content: url(/Assets/mtstorycolor.jpg);
 }
 
 .my-story-paragraph{
@@ -239,6 +275,35 @@
     padding:30px;
 }
 
+/* experience */
+
+.experience{
+    color: white;
+    text-align: center;
+}
+
+.experience-card{
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px;
+}
+
+.experience-card:hover{
+    background-color: rgb(71, 71, 71);
+}
+
+.experience-header{
+    color: lightsteelblue;
+    font-size:40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-decoration:underline;
+}
+
+.experience-paragraph{
+    font-size: 22px;
+}
 /* social-media */
 .social-media{
     background-color: black;
@@ -260,7 +325,10 @@
     height: 200px;
     width: 200px;
 }
-
+.social-media-card div a img:hover{
+    filter: grayscale(100%)
+}
+ 
 /* blog style */
 .blog{
     background-color: black;
@@ -285,9 +353,15 @@
     border: none;
 }
 
+
+.blog-card-container button:hover{
+    background-color: rgb(69, 69, 129);
+}
+
 .blog-card-container button a{
-    font-size: 20px;
+    font-size:25px;
     font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
     color: whitesmoke;
 }
@@ -296,7 +370,7 @@
 .contact{
     display: flex;
     flex-direction: column;
-    background-color: rgb(176, 176, 174);
+    background-color: rgb(65, 65, 64);
 }
 
 .contact-section-header{
@@ -308,7 +382,7 @@
 }
 
 .contact h3{
-    color: rgb(78, 78, 72);
+    color: rgb(191, 191, 183);
     font-size: 20px;
 }
 
