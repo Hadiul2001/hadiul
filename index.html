@@ -1,211 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hadiul_islam.com</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <title>Hadiul_Islam.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
-
 <body>
-    <!-- nav bar -->
-    <section class="nav">
-        <nav class="nav-container">
-            <img class="nav-logo" src="./Assets/logo.png" alt="">
-            <hr class="nav-divider" />
-            <ul class="nav-item">
-                <li><a href="">Home</a></li>
-                <li><a href="#my-story">My Story</a></li>
-                <li><a href="#my-study">Study</a></li>
-                <li><a href="#my-skill">Skill</a></li>
-                <li><a href="#my-experience">Experience</a></li>
-                <li><a href="#my-social-media">Social Media</a></li>
-                <li><a href="https://hadiul2001.github.io/my-hobby/">Hobby</a></li>
-                <li><a href="#my-blog">Blog</a></li>
-                <li><a href="#my-contact">Contact</a></li>
-            </ul>
-        </nav>
-    </section>
-    <!-- home -->
-    <section class="home">
-        <div class="home-container">
-            <p class="home-paragraph">
-                <Span id="home-hello">Hello!</Span><br>
-                I am <span class="home-hadiul-islam">Hadiul Islam</span><br>
-                A Tech Enthusiast & Aspiring Web Developer. <br>
-                <button class="btn-cv"><a href="./Assets/CV.pdf" download="Hadiul CV">Download CV</a></button>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-inner">
+        <div class="nav-logo">HI<span class="dot">.</span></div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#my-story">Story</a></li>
+            <li><a href="#my-study">Study</a></li>
+            <li><a href="#my-skill">Skills</a></li>
+            <li><a href="#my-experience">Experience</a></li>
+            <li><a href="#my-social-media">Social</a></li>
+            <li><a href="#my-blog">Blog</a></li>
+            <li><a href="https://hadiul2001.github.io/my-hobby/">Hobby</a></li>
+            <li><a href="#my-contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-inner">
+        <div class="hero-text">
+            <span class="hero-hello">Hello!</span>
+            <h1 class="hero-name">Hadiul Islam</h1>
+            <p class="hero-sub">Tech Enthusiast &amp; Aspiring Web Developer</p>
+            <a class="btn-cv" href="./Assets/CV.pdf" download="Hadiul_Islam_CV">
+                <i class="fa-solid fa-download"></i> Download CV
+            </a>
+        </div>
+        <!-- HERO IMAGE FRAME: 420x500px fixed. To add photo, replace the div below with:
+             <img src="./Assets/home_hadibw.jpg" alt="Hadiul Islam" class="hero-photo">
+             No other CSS changes needed. -->
+        <div class="hero-img-wrap">
+            <div class="hero-photo-placeholder">
+                <!-- <i class="fa-solid fa-user"></i> -->
+                <span><img src="Assets/home.jpg" alt=""></span>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll-hint"><i class="fa-solid fa-chevron-down"></i></div>
+</section>
+
+<!-- MY STORY -->
+<section class="section story-section" id="my-story">
+    <div class="container">
+        <span class="section-tag" style="--tag-color:#d4a8ff">About Me</span>
+        <h2 class="section-h">My Story</h2>
+        <div class="story-grid">
+            <!-- STORY IMAGE FRAME: 400x480px fixed. To add photo, replace the div below with:
+                 <img src="./Assets/mystorybw.jpg" alt="My Story" class="story-photo">
+                 No other CSS changes needed. -->
+            <div class="story-img-wrap">
+                <div class="story-photo-placeholder">
+                    <!-- <i class="fa-solid fa-mug-hot"></i> -->
+                    <span><img src="Assets/story.jpg" alt=""></span>
+                </div>
+            </div>
+            <p class="story-text">
+                I'm <strong class="hi-name">Hadiul Islam</strong>, a CSE student at AIUB, passionate about
+                web development and technology. I love creating clean, responsive websites and continuously
+                improving my coding skills. Coffee keeps me focused &#9749;, and marathon running boosts my
+                energy &#127939;. I'm always curious, eager to learn, and excited to grow in the tech world.
             </p>
-            
-            <img class="home-img" src="./Assets/home_hadibw.jpg" alt="">
         </div>
-    </section>
-    <!-- my story -->
-    <section class="my-story" id="my-story">
-        <div class="my-story-container">
-            <div>
-                <h1 class="section-header">My Story</h1>
-            </div>
-            <div class="my-story-text-img">
-                <img class="my-story-img" src="./Assets/mystorybw.jpg" alt="">
-                <p class="my-story-paragraph">
-                    I'm <span class="home-hadiul-islam">Hadiul Islam</span>, a CSE student at AIUB, passionate about web
-                    development and technology. I love creating clean, responsive websites and continuously improving my
-                    coding skills. Coffee keeps me focused, and marathon running boosts my energy. I'm always curious,
-                    eager to learn, and excited to grow in the tech world.
-                </p>
-            </div>
-        </div>
-    </section>
-    <!-- My study -->
-    <section class="study" id="my-study">
-        <div class="study-container">
-            <div>
-                <h1 class="section-header">My Study</h1>
-            </div>
-            <div class="study-card-container">
-                <div>
-                    <h1>American International University-Bangladesh</h1>
-                    <h2>Computer Science and Engineering</h2>
-                    <h3>Expected Graduation:September 2027</h3>
-                </div>
-                <div>
-                    <h1>Alamdanga Government College</h1>
-                    <h2> (HSC),Science</h2>
-                    <h3>Year of Passing: 2021 | GPA: 5.00</h3>
-                </div>
-                <div>
-                    <h1> Alamdanga Academy</h1>
-                    <h2>(SSC),Science</h2>
-                    <h3>Year of Passing: 2019 | GPA: 5.00</h3>
-                </div>
-                <div>
-                    <h1> Alamdanga Academy</h1>
-                    <h2>JSC</h2>
-                    <h3>Year of Passing: 2016 | GPA: 5.00</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- my skill -->
-    <section class="skill" id="my-skill">
-        <div class="skill-header-container">
-            <div>
-                <h1 class="section-header">My Skill</h1>
-            </div>
+    </div>
+</section>
 
-            <div class="skill-container">
-                <div class="html">
-                    <img src="./Assets/skillLogo/html_skill_logo.png" alt="">
-                    <h1>HTML</h1>
-                    <h1>90%</h1>
+<!-- MY STUDY -->
+<section class="section" id="my-study">
+    <div class="container">
+        <span class="section-tag" style="--tag-color:#c9a84c">Education</span>
+        <h2 class="section-h" style="--h-color:#9e7a2e">My Study</h2>
+        <div class="study-grid">
+            <div class="study-card">
+                <div class="study-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h3>American International University-Bangladesh</h3>
+                <p class="study-degree">Computer Science and Engineering</p>
+                <p class="study-year">Expected Graduation: September 2027</p>
+            </div>
+            <div class="study-card">
+                <div class="study-icon"><i class="fa-solid fa-school"></i></div>
+                <h3>Alamdanga Government College</h3>
+                <p class="study-degree">HSC &mdash; Science</p>
+                <p class="study-year">Year of Passing: 2021 | GPA: 5.00</p>
+            </div>
+            <div class="study-card">
+                <div class="study-icon"><i class="fa-solid fa-book-open"></i></div>
+                <h3>Alamdanga Academy</h3>
+                <p class="study-degree">SSC &mdash; Science</p>
+                <p class="study-year">Year of Passing: 2019 | GPA: 5.00</p>
+            </div>
+            <div class="study-card">
+                <div class="study-icon"><i class="fa-solid fa-pencil"></i></div>
+                <h3>Alamdanga Academy</h3>
+                <p class="study-degree">JSC</p>
+                <p class="study-year">Year of Passing: 2016 | GPA: 5.00</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MY SKILLS -->
+<section class="section skill-section" id="my-skill">
+    <div class="container">
+        <span class="section-tag" style="--tag-color:#1c2340">Expertise</span>
+        <h2 class="section-h" style="--h-color:#1c2340">My Skills</h2>
+        <div class="skill-list">
+            <div class="skill-row">
+                <div class="skill-icon html-icon"><i class="fa-brands fa-html5"></i></div>
+                <span class="skill-name">HTML</span>
+                <div class="skill-bar-wrap"><div class="skill-bar" data-pct="90" style="--bar-color:linear-gradient(90deg,#e34f26,#ef8c00)"></div></div>
+                <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-row">
+                <div class="skill-icon css-icon"><i class="fa-brands fa-css3-alt"></i></div>
+                <span class="skill-name">CSS</span>
+                <div class="skill-bar-wrap"><div class="skill-bar" data-pct="90" style="--bar-color:linear-gradient(90deg,#1572b6,#33a9dc)"></div></div>
+                <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-row">
+                <div class="skill-icon js-icon"><i class="fa-brands fa-js"></i></div>
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar-wrap"><div class="skill-bar" data-pct="50" style="--bar-color:linear-gradient(90deg,#f7df1e,#c9a000)"></div></div>
+                <span class="skill-pct">50%</span>
+            </div>
+            <div class="skill-row">
+                <div class="skill-icon cpp-icon"><i class="fa-solid fa-code"></i></div>
+                <span class="skill-name">C++</span>
+                <div class="skill-bar-wrap"><div class="skill-bar" data-pct="60" style="--bar-color:linear-gradient(90deg,#6c3fc5,#9b59b6)"></div></div>
+                <span class="skill-pct">60%</span>
+            </div>
+            <div class="skill-row">
+                <div class="skill-icon java-icon"><i class="fa-brands fa-java"></i></div>
+                <span class="skill-name">Java</span>
+                <div class="skill-bar-wrap"><div class="skill-bar" data-pct="85" style="--bar-color:linear-gradient(90deg,#e76f00,#f89820)"></div></div>
+                <span class="skill-pct">85%</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MY EXPERIENCE -->
+<section class="section" id="my-experience">
+    <div class="container">
+        <span class="section-tag" style="--tag-color:#1e7e5e">Background</span>
+        <h2 class="section-h" style="--h-color:#1e7e5e">My Experience</h2>
+        <div class="exp-list">
+            <div class="exp-card" style="--ei:#c9a84c">
+                <div class="exp-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <div class="exp-body">
+                    <h3>Frontend Web Development &mdash; 1 Year</h3>
+                    <p>Worked on personal and practice projects using HTML, CSS, JavaScript, and MongoDB. Built responsive, mobile-friendly websites with clean UI designs, implemented basic CRUD features, and managed repositories on GitHub.</p>
                 </div>
-                <div class="css">
-                    <img src="./Assets/skillLogo/css_skill_logo.jpeg" alt="">
-                    <h1>CSS</h1>
-                    <h1>90%</h1>
+            </div>
+            <div class="exp-card" style="--ei:#c0392b">
+                <div class="exp-icon"><i class="fa-solid fa-people-group"></i></div>
+                <div class="exp-body">
+                    <h3>Founder &amp; Organizer &mdash; Hilful Fuzul (Est. 2019)</h3>
+                    <p>Founded a social organisation focused on community service. Organised fundraising programmes and distributed food, clothes, and essentials to underprivileged people. Developed strong leadership and event management skills.</p>
                 </div>
-                <div class="javascript">
-                    <img src="./Assets/skillLogo/javascript_skill_logo.png" alt="">
-                    <h1>JavaScript</h1>
-                    <h1>50%</h1>
-                </div>
-                <div class="cplusplus">
-                    <img src="./Assets/skillLogo/C++_skill_logo.png" alt="">
-                    <h1>C++</h1>
-                    <h1>60%</h1>
-                </div>
-                <div class="java">
-                    <img src="./Assets/skillLogo/java_skill_logo.png" alt="">
-                    <h1>JAVA</h1>
-                    <h1>85%</h1>
+            </div>
+            <div class="exp-card" style="--ei:#1572b6">
+                <div class="exp-icon"><i class="fa-solid fa-person-running"></i></div>
+                <div class="exp-body">
+                    <h3>Marathon Runner</h3>
+                    <p>Completed two official runs &mdash; 10 km and 7.5 km &mdash; in events with 2,000+ participants. Marathon running built discipline, consistency, and endurance, while expanding my network and interpersonal skills.</p>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- my experience -->
-     <section class="experience" id="my-experience">
-            <div>
-                <h1 class="section-header">My Experience</h1>
-            </div>
-            <div>
-                <div class="experience-card">
-                <h2 class="experience-header">Web Development (Frontend Developer – 1 Year)</h2>
-                <p class="experience-paragraph">
-                    I have one year of experience in frontend web development where I worked on several personal and practice projects using HTML, CSS, JavaScript, and MongoDB. During this time, I created responsive and mobile-friendly websites with clean UI designs. I also built simple CRUD features using MongoDB for basic data management and used GitHub to host and manage my projects. While working on these projects, I improved my problem-solving ability by fixing bugs, optimizing performance, and collaborating with peers to share ideas and enhance project quality.
+    </div>
+</section>
 
-                </p>
-            </div>
-            <div class="experience-card">
-                <h2 class="experience-header">Founder & Organizer – Hilful Fuzul (Social Organization)</h2>
-                <p class="experience-paragraph">
-                    In addition to web development, I am the Founder and Organizer of Hilful Fuzul, a social organization established in 2019. Through this group, I have organized fundraising programs and distributed food, clothes, and other essentials to poor and underprivileged people. Leading a team of volunteers has helped me develop strong leadership, communication, and event management skills. I learned how to work with people from different backgrounds and gained valuable experience in teamwork, decision-making, and community service.
-
-                </p>
-            </div>
-            <div class="experience-card">
-                <h2 class="experience-header">Marathon Runner</h2>
-                <p class="experience-paragraph">
-                    Beyond academics and social work, I am also a marathon runner. I have successfully completed two official runs—one of 10 km and another of 7.5 km—in events with more than 2000 participants. Marathon running has taught me discipline, consistency, and endurance. It also gave me the opportunity to meet and connect with many new people, improving my networking and interpersonal skills. These experiences outside academics have built my mental strength and helped me apply teamwork, focus, and resilience in my personal and professional life.
-
-                </p>
-            </div>
-            </div>
-     </section>
-    <!-- my social media -->
-    <section class="social-media" id="my-social-media">
-        <div class="social-media-container">
-            <div>
-                <h1 class="section-header">Find Me On</h1>
-            </div>
-            <div class="social-media-card">
-                <div>
-                    <a href="https://www.facebook.com/mdhadiulislam1094"> <img src="./Assets/social media/facebook.jpeg" alt=""></a>
-                </div>
-                <div>
-                    <a href="https://www.instagram.com/mdhadiulislam1094/"> <img src="./Assets/social media/instragram.jpeg" alt=""></a>
-                </div>
-                <div> 
-                    <a href="https://www.threads.com/@mdhadiulislam1094"><img src="./Assets/social media/threads.jpeg" alt=""></a>
-                </div>
-                <div>
-                    <a href="https://www.linkedin.com/in/md-hadiul-islam-4772a8291/"><img src="./Assets/social media/linkedin.jpeg" alt=""> </a>
-                </div>
-                <div>
-                    <a href="https://github.com/Hadiul2001"> <img src="./Assets/social media/github.jpeg" alt=""></a>
-                </div>
-            </div>
+<!-- SOCIAL MEDIA — official Font Awesome brand icons -->
+<section class="section social-section" id="my-social-media">
+    <div class="container">
+        <span class="section-tag" style="--tag-color:#c9a84c">Connect</span>
+        <h2 class="section-h" style="--h-color:#c9a84c">Find Me On</h2>
+        <div class="social-grid">
+            <a class="social-card sc-facebook" href="https://www.facebook.com/mdhadiulislam1094" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+                <div class="social-icon-wrap"><i class="fa-brands fa-facebook-f"></i></div>
+                <span class="social-name">Facebook</span>
+                <span class="social-handle">@mdhadiulislam1094</span>
+            </a>
+            <a class="social-card sc-instagram" href="https://www.instagram.com/mdhadiulislam1094/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+                <div class="social-icon-wrap"><i class="fa-brands fa-instagram"></i></div>
+                <span class="social-name">Instagram</span>
+                <span class="social-handle">@mdhadiulislam1094</span>
+            </a>
+            <a class="social-card sc-threads" href="https://www.threads.com/@mdhadiulislam1094" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+                <div class="social-icon-wrap"><i class="fa-brands fa-threads"></i></div>
+                <span class="social-name">Threads</span>
+                <span class="social-handle">@mdhadiulislam1094</span>
+            </a>
+            <a class="social-card sc-linkedin" href="https://www.linkedin.com/in/md-hadiul-islam-4772a8291/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+                <div class="social-icon-wrap"><i class="fa-brands fa-linkedin-in"></i></div>
+                <span class="social-name">LinkedIn</span>
+                <span class="social-handle">Md Hadiul Islam</span>
+            </a>
+            <a class="social-card sc-github" href="https://github.com/Hadiul2001" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+                <div class="social-icon-wrap"><i class="fa-brands fa-github"></i></div>
+                <span class="social-name">GitHub</span>
+                <span class="social-handle">Hadiul2001</span>
+            </a>
         </div>
-    </section>
-    <!-- my blog -->
-    <section class="blog" id="my-blog">
-           <div class="blog-container">
-            <div>
-                <h1 class="section-header">My Blog</h1>
-            </div>
-            <div class="blog-card-container">
-               <button>
-                    <a href="https://docs.google.com/document/d/1YRF0NxMisL2x6HMvV16nEN0yebU6NJwvcn8YL8Gs6sM/edit?tab=t.0">☕Cups of Comfort☕</a>
+    </div>
+</section>
+
+<!-- BLOG -->
+<section class="section" id="my-blog">
+    <div class="container">
+        <span class="section-tag" style="--tag-color:#6c3fc5">Writing</span>
+        <h2 class="section-h" style="--h-color:#6c3fc5">My Blog</h2>
+        <div class="blog-grid">
+            <a class="blog-card blog-1" href="https://docs.google.com/document/d/1YRF0NxMisL2x6HMvV16nEN0yebU6NJwvcn8YL8Gs6sM/edit?tab=t.0" target="_blank" rel="noopener noreferrer">
+                <div class="blog-emoji">&#9749;</div>
+                <h3>Cups of Comfort</h3>
+                <p>A warm read about the joy and ritual of coffee.</p>
+                <span class="blog-read-more">Read Article <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+            <a class="blog-card blog-2" href="https://docs.google.com/document/d/1BQNL0K1k2pg32mAfowK9QTlcckUGx7M2ZGuRhGWT8yA/edit?tab=t.0" target="_blank" rel="noopener noreferrer">
+                <div class="blog-emoji">&#128172;</div>
+                <h3>Favourite Quote</h3>
+                <p>Words that inspire and keep me going every day.</p>
+                <span class="blog-read-more">Read Article <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT — perfectly centred both horizontally and vertically -->
+<section class="section contact-section" id="my-contact">
+    <div class="container contact-container">
+        <div class="contact-box">
+            <span class="section-tag" style="--tag-color:#c9a84c">Say Hello</span>
+            <h2 class="section-h" style="--h-color:#c9a84c">Get in Touch</h2>
+            <p class="contact-sub">
+                <i class="fa-solid fa-envelope"></i>
+                For business queries, email me at
+                <a href="mailto:hadiulislam.contact@gmail.com" class="email-link">hadiulislam.contact@gmail.com</a>
+            </p>
+            <form class="contact-form" onsubmit="return false;">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name"><i class="fa-solid fa-user"></i> Name <span class="req">*</span></label>
+                        <input id="name" type="text" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><i class="fa-solid fa-envelope"></i> Email <span class="req">*</span></label>
+                        <input id="email" type="email" placeholder="your@email.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject"><i class="fa-solid fa-tag"></i> Subject</label>
+                    <input id="subject" type="text" placeholder="What's this about?">
+                </div>
+                <div class="form-group">
+                    <label for="message"><i class="fa-solid fa-message"></i> Message</label>
+                    <textarea id="message" rows="5" placeholder="Write your message here..."></textarea>
+                </div>
+                <button type="submit" class="btn-send">
+                    <i class="fa-solid fa-paper-plane"></i> Send Message
                 </button>
-                <button>
-                     <a href="https://docs.google.com/document/d/1BQNL0K1k2pg32mAfowK9QTlcckUGx7M2ZGuRhGWT8yA/edit?tab=t.0">Favourite  Quote</a>
-                </button>
-            </div>
-           </div>
-    </section>
-    <!-- contact -->
-    <section class="contact" id="my-contact">
-        <h1 class="contact-section-header">Get in Touch</h1>
-        <h5>Please email at <span class="email-style">hadiulislamofficial.com</span> for any business queries</h5>
-        <h3>Name*</h3>
-        <input type="text" placeholder="Name">
-        <h3>Email*</h3>
-        <input type="email" name=""  placeholder="Email">
-        <h3>Subject</h3>
-        <input id="subject" type="text" placeholder="Subject">
-        <h3>Message</h3>
-        <input id="message" type="text" placeholder="Message">
-    </section>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>Designed &amp; Built by <span class="footer-name">Hadiul Islam</span> &mdash; 2025</p>
+</footer>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navLinks.classList.remove('open');
+    }));
+
+    document.querySelectorAll('.skill-bar').forEach(b => b.style.width = '0');
+    const skillObs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.querySelectorAll('.skill-bar').forEach(bar => { bar.style.width = bar.dataset.pct + '%'; });
+                skillObs.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.3 });
+    const skillSection = document.getElementById('my-skill');
+    if (skillSection) skillObs.observe(skillSection);
+
+    const fadeObs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); fadeObs.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.exp-card, .study-card, .social-card, .blog-card').forEach(el => fadeObs.observe(el));
+</script>
 </body>
-
 </html>
